@@ -30,8 +30,8 @@ $groups | % {
 	$list | % { 
 		$table = New-Object -TypeName PSObject
 		cls
-		write "Doing $currentgroup out of $groupslength ACL"
-		write "Doing $currentlist out of $listlength ACE"
+		write "Processing $currentgroup of $groupslength ACL"
+		write "Processing $currentlist of $listlength ACE"
 		
 		if ($_ -match "object") {
 			$_ -match "(line\s\d+)"
